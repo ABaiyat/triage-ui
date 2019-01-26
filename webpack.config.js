@@ -13,20 +13,9 @@ module.exports = {
       {
         test: /\.less$/,
         use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-              modules: true,
-              localIdentName: '[local]___[hash:base64:5]',
-            },
-          },
-          {
-            loader: 'less-loader',
-          },
+          'style-loader',
+          'css-loader',
+          'less-loader',
         ],
       },
       {
@@ -44,6 +33,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      favicon: 'res/favicon.ico',
     }),
   ],
 };

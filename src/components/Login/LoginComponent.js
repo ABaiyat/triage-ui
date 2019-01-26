@@ -2,12 +2,12 @@ import React from 'react';
 import {
   Button, Form, Grid, Header, Message, Segment,
 } from 'semantic-ui-react';
-import style from './Login.less';
+import './Login.less';
 
 const LoginComponent = () => (
-  <div className={style.loginForm}>
+  <div className="loginForm">
     <Grid textAlign="center" verticalAlign="middle">
-      <Grid.Column className={style.loginContainer}>
+      <Grid.Column className="loginContainer">
         <Header color="blue">Log-in to your account</Header>
         <Form size="large">
           <Segment stacked>

@@ -2,13 +2,13 @@ import React from 'react';
 import {
   Button, Form, Grid, Header, Message, Segment,
 } from 'semantic-ui-react';
-import style from './Register.less';
+import './Register.less';
 
 
 const Register = () => (
-  <div className={style.registerForm}>
+  <div className="registerForm">
     <Grid textAlign="center" verticalAlign="middle">
-      <Grid.Column className={style.registerContainer}>
+      <Grid.Column className="registerContainer">
         <Header color="blue">Create a new account</Header>
         <Form size="large">
           <Segment stacked>
