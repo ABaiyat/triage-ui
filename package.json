@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "semantic-ui-react": "^0.84.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
