@@ -4,8 +4,8 @@
   "description": "UI for Triage Application",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --env.API_URL=http://localhost:8080/triage-ws --mode development --open --hot",
+    "build": "webpack --env.API_URL=https://tempproductionurl.com/triage-ws --mode production"
   },
   "author": "Amaan Baiyat",
   "license": "MIT",

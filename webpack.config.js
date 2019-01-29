@@ -1,7 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+module.exports = env => ({
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, '/dist'),
@@ -33,9 +34,12 @@ module.exports = {
     port: 8081,
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.API_URL': JSON.stringify(env.API_URL),
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       favicon: 'res/favicon.ico',
     }),
   ],
-};
+});
