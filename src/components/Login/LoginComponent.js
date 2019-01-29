@@ -49,7 +49,7 @@ const LoginComponent = (props) => {
 
 LoginComponent.propTypes = {
   handleSubmit: PropTypes.func,
-  onSubmit: () => {},
+  onSubmit: PropTypes.func,
 };
 
 LoginComponent.defaultProps = {

@@ -68,7 +68,7 @@ const RegisterComponent = (props) => {
 
 RegisterComponent.propTypes = {
   handleSubmit: PropTypes.func,
-  onSubmit: () => {},
+  onSubmit: PropTypes.func,
 };
 
 RegisterComponent.defaultProps = {
