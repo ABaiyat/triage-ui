@@ -1,11 +1,14 @@
 import { reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
+import loginAttempt from '../../actions/loginAction';
 import LoginComponent from './LoginComponent';
 
-const mapStateToProps = () => ({});
+const mapStateToProps = state => ({
+  isFetching: state.isFetching,
+});
 
-const mapDispatchToProps = () => ({
-  onSubmit: data => data,
+const mapDispatchToProps = dispatch => ({
+  onSubmit: user => dispatch(loginAttempt(user)),
 });
 
 const formConfiguration = {
