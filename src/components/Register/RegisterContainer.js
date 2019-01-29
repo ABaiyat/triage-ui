@@ -1,11 +1,12 @@
 import { reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
+import registerAttempt from '../../actions/registerAction';
 import RegisterComponent from './RegisterComponent';
 
 const mapStateToProps = () => ({});
 
-const mapDispatchToProps = () => ({
-  onSubmit: data => data,
+const mapDispatchToProps = dispatch => ({
+  onSubmit: user => dispatch(registerAttempt(user)),
 });
 
 const formConfiguration = {

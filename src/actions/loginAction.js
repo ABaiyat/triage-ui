@@ -31,7 +31,8 @@ const loginAttempt = userObj => (dispatch) => {
     method: 'POST',
     mode: 'cors',
     headers: {
-      Accept: 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Request-Method': 'POST',
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(user),
