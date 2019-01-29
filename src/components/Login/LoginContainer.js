@@ -12,7 +12,6 @@ const formConfiguration = {
   form: 'loginForm',
 };
 
-
 const ContainerWithProps = connect(
   mapStateToProps,
   mapDispatchToProps,

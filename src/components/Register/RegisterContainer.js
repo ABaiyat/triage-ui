@@ -12,7 +12,6 @@ const formConfiguration = {
   form: 'RegisterForm',
 };
 
-
 const ContainerWithProps = connect(
   mapStateToProps,
   mapDispatchToProps,
