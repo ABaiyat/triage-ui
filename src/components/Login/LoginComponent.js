@@ -18,9 +18,9 @@ const LoginComponent = (props) => {
             <Segment stacked>
               <Form.Field>
                 <Field
-                  name="username"
-                  icon="users"
-                  placeholder="Username"
+                  name="email"
+                  icon="at"
+                  placeholder="Email"
                   component={WrappedInput}
                 />
               </Form.Field>

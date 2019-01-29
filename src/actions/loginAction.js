@@ -4,6 +4,8 @@ import {
   USER_LOGIN_SUCCESS,
 } from '../constants/actionTypes';
 
+import url from '../constants/urlPaths';
+
 const loginRequest = () => ({
   type: USER_LOGIN_REQUEST,
 });
@@ -18,10 +20,14 @@ const loginSuccess = user => ({
   user,
 });
 
-const loginAttempt = user => (dispatch) => {
-  const url = 'placeholder';
+const loginAttempt = userObj => (dispatch) => {
+  const loginUrl = `${url}/users/login`;
   dispatch(loginRequest());
-  fetch(url, {
+  const user = {
+    email: userObj.email,
+    password: userObj.password,
+  };
+  fetch(loginUrl, {
     method: 'POST',
     mode: 'cors',
     headers: {
